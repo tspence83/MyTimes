@@ -39,17 +39,23 @@ nav a{
 }
 
 .left-column{
-  display: inline-block;
+  display: flex;
   width: 630px;
+  flex-direction: column;
 
 }
 .left-column .article{
   border: 1px solid black;
 }
 
+.left-column .first-article
+  h1{background-image: url("../images/img-story-main.png")
+}
+
 .middle-column{
-  display:inline-block;
+  display:flex;
   width: 300px;
+  flex-direction: column;
 }
 
 .middle-column .article{
@@ -57,8 +63,9 @@ nav a{
 }
 
 .right-column{
-  display: inline-block;
+  display: flex;
   width: 240px;
+  flex-direction: column;
 }
 
 .right-column .article{
