@@ -3,38 +3,64 @@ header{
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  align-items: center;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 80px;
   border-bottom: 1px solid black;
-  background-color: white;
+  align-items: center;
+
 }
 
 .logo{
   display: flex;
   align-items: center;
   flex-grow: 1;
-  padding-left: 30px;
 }
+
+.logo img{
+  padding: 10px 10px;
+}
+
 .logo span{
   color: mediumaquamarine;
 }
 
-.logo img{
-  width: 70px;
-  height: 60px;
-  margin-right: 12px;
-}
-
-header nav{
+nav{
   padding-right: 40px;
 }
 
-a{
-  color: black;
-}
 nav span{
   display: inline-block;
+}
+
+nav a{
+  color: black;
+}
+
+.column-layout{
+  display: flex;
+}
+
+.left-column{
+  display: inline-block;
+  width: 630px;
+
+}
+.left-column .article{
+  border: 1px solid black;
+}
+
+.middle-column{
+  display:inline-block;
+  width: 300px;
+}
+
+.middle-column .article{
+  border: 1px solid black;
+}
+
+.right-column{
+  display: inline-block;
+  width: 240px;
+}
+
+.right-column .article{
+  border: 1px solid black;
 }
