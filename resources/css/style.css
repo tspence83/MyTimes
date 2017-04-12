@@ -1,73 +1,37 @@
 header{
   display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: 1px solid black;
-  align-items: center;
+  position: fixed; <!-so that it doesn't scroll->
+  width: 100%;
+  height: 80px;
 
 }
 
 .logo{
   display: flex;
+  color: mediumaquamarine;
   align-items: center;
   flex-grow: 1;
 }
 
-.logo img{
-  padding: 10px 10px;
-}
-
 .logo span{
-  color: mediumaquamarine;
+  padding-left: 15px; <!-shifted MYT wording ->
 }
 
 nav{
+  display: flex;
   padding-right: 40px;
 }
 
 nav span{
   display: inline-block;
+  padding: 20px 10px;
 }
 
-nav a{
+a{
   color: black;
-}
-
-.column-layout{
-  display: flex;
-}
-
-.left-column{
-  display: flex;
-  width: 630px;
-  flex-direction: column;
-
-}
-.left-column .article{
-  border: 1px solid black;
-}
-
-.left-column .first-article
-  h1{background-image: url("../images/img-story-main.png")
-}
-
-.middle-column{
-  display:flex;
-  width: 300px;
-  flex-direction: column;
-}
-
-.middle-column .article{
-  border: 1px solid black;
-}
-
-.right-column{
-  display: flex;
-  width: 240px;
-  flex-direction: column;
-}
-
-.right-column .article{
-  border: 1px solid black;
 }
