@@ -1,37 +1,208 @@
-header{
-  display: flex;
+/* Header styles */
+header {
   border-bottom: 1px solid black;
-  align-items: center;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  position: fixed; <!-so that it doesn't scroll->
+  display: flex;
+  align-items: center;
+  position: fixed;
   width: 100%;
   height: 80px;
-
+  z-index: 1;
+  background-color: white;
 }
 
-.logo{
-  display: flex;
-  color: mediumaquamarine;
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/*heading for FBI article*/
+h2 {
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.logo {
+  display: flex; /*flex item of .container*/
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 1; /*causes nav to shift to far right*/
+  padding-left: 30px;
 }
 
-.logo span{
-  padding-left: 15px; <!-shifted MYT wording ->
+.logo span {
+  padding-left: 10px;
+  color: MediumAquamarine; /*Causes My Times to be green*/
 }
 
-nav{
-  display: flex;
+nav {
   padding-right: 40px;
+  display: flex; /*flex item of .container*/
 }
 
-nav span{
+nav span {
   display: inline-block;
   padding: 20px 10px;
 }
 
-a{
+a {
   color: black;
+}
+
+.container {
+  display: flex;
+  padding-top: 120px;
+  justify-content: center; /*centers the entire article minus header*/
+}
+
+.column.large {
+  display: flex; /*flex item of .container*/
+  width: 630px;
+  margin-right: 30px;
+  flex-direction: column; /*puts articles in large column class in column order;*/
+  /*^^can be used bc it is a nested flex inside of container*/
+}
+
+.column.medium {
+  display: flex;
+  width: 300px;
+  margin-right: 30px;
+  flex-direction: column;/*puts articles in medium column class in column order;*/
+  /*^^can be used bc it is a nested flex inside of container*/
+}
+
+.column.small {
+  display: flex;
+  width: 240px;
+  margin-right: 30px;
+  flex-direction: column;/*puts articles in small column class in column order;*/
+  /*^^can be used bc it is a nested flex inside of container*/
+}
+
+.headline {
+ display: flex;
+  background-image: url("../images/img-story-main.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  height: 300px;
+  justify-content: center;/*can be used bc nested flex inside of .container; only applies to headline*/
+  align-items: center; /*aligns text inside of image*/
+}
+
+.headline span {
+  padding-left: 15px;
+}
+
+.stories {/*stories in the large column under headliner*/
+  display: flex;
+  justify-content: space-between;/*puts equal space between all large column stories relative to other columns*/
+}
+
+.earth-spin {
+  background-image: url("../images/img-story-2.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.camera {
+  background-image: url("../images/img-story-3.png");
+  height: 300px;
+  text-align: center;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;/*puts all story classes in column format*/
+  width: 300px;
+}
+
+.cat {
+  background-image: url("../images/img-story-1.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.news.bites h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.storyText {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.news.bites .bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin-top: 75px;
+  font-family: Verdana;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; /*causes border to span all the way across (L to R)*/
+  height: 125px;
+}
+
+.footerLogo {
+  display: inline;
+  border-right: 2px solid white;
+  padding-right: 25px;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.imageText {/*for all text on images*/
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  align-items: center;
 }
